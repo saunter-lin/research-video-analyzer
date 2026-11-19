@@ -1,0 +1,2 @@
+# Full existing offline suite (real local VAD/FFmpeg; no model download).
+-e .[video,audio]

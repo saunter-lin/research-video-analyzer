@@ -1,0 +1,38 @@
+name: offline-checks
+on: [workflow_dispatch]
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+permissions:
+  contents: read
+jobs:
+  core:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python: ['3.11', '3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install .
+      - run: video-analyzer --help
+      - run: video-analyzer doctor
+      - run: python examples/offline_research.py
+      - run: python -B tools/test_core.py
+      - run: python -B tools/audit_public_tree.py
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install '.[video,audio]'
+      - run: python -B tools/coverage_stdlib.py --output /tmp/coverage.json
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+      - run: python -B tools/audit_public_tree.py

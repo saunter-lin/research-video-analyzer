@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-video-analyzer"
+version = "1.4.0.dev2"
+description = "Evidence-traceable local research CLI with an optional Agent Skill"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "third_party/licenses/*.txt"]
+dependencies = []
+classifiers = ["Development Status :: 3 - Alpha", "Operating System :: POSIX", "Programming Language :: Python :: 3"]
+
+[project.optional-dependencies]
+video = ["yt-dlp>=2026.10.26", "yt-dlp-ejs>=0.8.0", "imageio-ffmpeg>=0.6,<0.7"]
+audio = ["faster-whisper==1.2.1", "av==16.1.0", "numpy>=1.26", "onnxruntime>=1.16", "imageio-ffmpeg>=0.6,<0.7"]
+documents = ["trafilatura>=2.3,<3", "pypdf>=7,<8", "certifi"]
+benchmark = ["opencc-python-reimplemented==0.1.7"]
+
+[project.scripts]
+video-analyzer = "research_video_analyzer.cli:main"
+
+[tool.setuptools]
+packages = ["research_video_analyzer", "research_video_analyzer.scripts", "research_video_analyzer.scripts.audio_analysis"]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+research_video_analyzer = "."
+
+[tool.setuptools.package-data]
+research_video_analyzer = ["README*.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "ACKNOWLEDGEMENTS.md", "third_party/licenses/*.txt", "THIRD_PARTY.md", "docs/*.md", "docs/*.json", "runtime.example.json", "schemas/*.json", "references/*.json", "skills/research-video-analyzer/SKILL.md", "skills/research-video-analyzer/references/*.md", "skills/research-video-analyzer/references/*.json"]

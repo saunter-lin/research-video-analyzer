@@ -1,0 +1,111 @@
+{
+  "method": "stdlib trace statement lines, parent process only; excludes subprocess/branch coverage",
+  "tests": 158,
+  "failures": 0,
+  "errors": 0,
+  "statements": 2726,
+  "covered": 1934,
+  "percent": 70.95,
+  "files": [
+    {
+      "file": "scripts/__init__.py",
+      "statements": 1,
+      "covered": 0
+    },
+    {
+      "file": "scripts/antigravity_backend.py",
+      "statements": 299,
+      "covered": 244
+    },
+    {
+      "file": "scripts/antigravity_entry.py",
+      "statements": 31,
+      "covered": 26
+    },
+    {
+      "file": "scripts/asr_worker.py",
+      "statements": 64,
+      "covered": 0
+    },
+    {
+      "file": "scripts/audio_analysis/__init__.py",
+      "statements": 2,
+      "covered": 0
+    },
+    {
+      "file": "scripts/audio_analysis/alignment.py",
+      "statements": 35,
+      "covered": 29
+    },
+    {
+      "file": "scripts/audio_analysis/asr.py",
+      "statements": 61,
+      "covered": 46
+    },
+    {
+      "file": "scripts/audio_analysis/evidence.py",
+      "statements": 82,
+      "covered": 72
+    },
+    {
+      "file": "scripts/audio_analysis/pipeline.py",
+      "statements": 80,
+      "covered": 62
+    },
+    {
+      "file": "scripts/audio_analysis/preprocess.py",
+      "statements": 33,
+      "covered": 25
+    },
+    {
+      "file": "scripts/audio_analysis/vad.py",
+      "statements": 48,
+      "covered": 37
+    },
+    {
+      "file": "scripts/audio_metrics.py",
+      "statements": 32,
+      "covered": 26
+    },
+    {
+      "file": "scripts/benchmark.py",
+      "statements": 69,
+      "covered": 0
+    },
+    {
+      "file": "scripts/doctor.py",
+      "statements": 18,
+      "covered": 0
+    },
+    {
+      "file": "scripts/document_intake.py",
+      "statements": 153,
+      "covered": 0
+    },
+    {
+      "file": "scripts/external_subtitles.py",
+      "statements": 212,
+      "covered": 184
+    },
+    {
+      "file": "scripts/research_ledger.py",
+      "statements": 287,
+      "covered": 242
+    },
+    {
+      "file": "scripts/va.py",
+      "statements": 1014,
+      "covered": 773
+    },
+    {
+      "file": "scripts/video_comments.py",
+      "statements": 111,
+      "covered": 92
+    },
+    {
+      "file": "scripts/web_sources.py",
+      "statements": 94,
+      "covered": 76
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# Local state and credentials
+.env
+.env.*
+!.env.example
+runtime.json
+*.pem
+*.key
+cookies*.txt
+*credentials*.json
+# Research data, models, caches, old experiments
+/data/
+/cache/
+/.models/
+/.tools/
+/.backups/
+/research-ab/
+/docs/archive/
+/docs/maintenance/
+*.sqlite*
+*.db
+*.log
+# Environments and build output
+.venv*/
+.document-intake-venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.coverage*
+htmlcov/
+.DS_Store
+
+# Local provenance evidence belongs outside the Git root
+/verification/
+/artifacts/

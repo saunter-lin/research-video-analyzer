@@ -1,0 +1,15 @@
+{
+  "scope": "source/docs/history text <=4 MiB per file; environments, binaries and symlinks excluded; bounded at 100 MiB/15 seconds",
+  "files_scanned": 2084,
+  "files_skipped": 259,
+  "bytes_scanned": 66306237,
+  "stopped_at_scan_limit": false,
+  "files_with_pattern": {
+    "personal_home": 853,
+    "signed_or_token_url": 2,
+    "private_key": 0,
+    "known_token_shape": 2
+  },
+  "limitations": "Patterns are leads, not confirmed secrets or exhaustive PII findings; matched values were not copied. Production data/history must never enter the public tree.",
+  "triage": "Signed-query hits are synthetic tests; token-shaped hits are embedded Google/Kaggle archived website configuration, not confirmed user credentials. No value was validated or exported; archives excluded."
+}

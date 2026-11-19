@@ -1,0 +1,2 @@
+# Optional acquisition dependencies; core offline CLI uses the standard library.
+-e .[video]

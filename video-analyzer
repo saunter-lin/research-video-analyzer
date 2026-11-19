@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+VA_PROJECT_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ -x "$VA_PROJECT_ROOT/.venv/bin/python" ]; then
+    VA_PYTHON="$VA_PROJECT_ROOT/.venv/bin/python"
+else
+    VA_PYTHON="${PYTHON:-python3}"
+fi
+exec "$VA_PYTHON" "$VA_PROJECT_ROOT/cli.py" "$@"

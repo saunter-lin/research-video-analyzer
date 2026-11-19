@@ -1,0 +1,22 @@
+{
+  "whisper_cli": ".tools/whisper-cli",
+  "versions": {
+    "whisper.cpp": "unconfigured",
+    "faster-whisper": "1.2.1"
+  },
+  "models": {
+    "whisper.cpp": {
+      "base": ".models/ggml-base.bin"
+    },
+    "faster-whisper": {
+      "base": ".models/faster-whisper-base"
+    }
+  },
+  "audio_analysis": {
+    "enabled": false
+  },
+  "sound_event_analysis": {
+    "enabled": false,
+    "qualification": "not_qualified"
+  }
+}

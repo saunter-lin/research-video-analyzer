@@ -1,0 +1,719 @@
+{
+  "date": "2026-11-19",
+  "scope": "External Skill provenance; original candidate before audit documentation was added",
+  "comparison": {
+    "method": {
+      "python": "Exact 40 consecutive non-comment/non-layout tokens",
+      "prose": "Exact 100 consecutive characters after whitespace removal and case-folding",
+      "limitations": "Triage only: common API patterns may match; renamed, translated or semantically adapted material may not. No automatic originality/legal verdict."
+    },
+    "candidate_python_files": 37,
+    "upstream_python_files": 42,
+    "candidate_markdown_files": 33,
+    "upstream_markdown_files": 14,
+    "python_matches": [],
+    "prose_matches": [],
+    "upstream_files": [
+      {
+        "file": "LDJ-creat__video-analyser-skill/README.md",
+        "sha256": "1b78276bfd969651bd2de32068f0deb272fa93cd50e591e0f7e773cbf7972946"
+      },
+      {
+        "file": "LDJ-creat__video-analyser-skill/README.zh.md",
+        "sha256": "322046a2e93778cf5b76ba337fd2566d5068c7f971dce457009ca0de7522ded0"
+      },
+      {
+        "file": "LDJ-creat__video-analyser-skill/SKILL.md",
+        "sha256": "83e3433a98755bd878fecbb1d13f294a0e4ab9ac185fe903b5b34b86b1d0d66f"
+      },
+      {
+        "file": "LDJ-creat__video-analyser-skill/scripts/analyze_video.py",
+        "sha256": "bdd6bb622a06faf8a2b3dbf27ebee551be03e75bcfb41595533213841ef09c41"
+      },
+      {
+        "file": "LDJ-creat__video-analyser-skill/scripts/fetch_chunks.py",
+        "sha256": "dadfc0cfeb07fa5ad4e442913fe6dbb45aaea82fdfb31d47ba3ea3fb2de7a8d2"
+      },
+      {
+        "file": "LDJ-creat__video-analyser-skill/scripts/fetch_plan.py",
+        "sha256": "b424644382a1361f034f140173311d6043a1971e4d6be6db763d06cdf9273910"
+      },
+      {
+        "file": "LDJ-creat__video-analyser-skill/scripts/poll_job.py",
+        "sha256": "5c64252dd482f03deb4cb1251ea66581b792386d4ba45feca72018753b9000e5"
+      },
+      {
+        "file": "LDJ-creat__video-analyser-skill/scripts/submit_chunk_summaries.py",
+        "sha256": "af228e8d70bde20f7a88b6a0af0bf0e9ba3d431f4fdefbbe8b9ed94784a95178"
+      },
+      {
+        "file": "LDJ-creat__video-analyser-skill/scripts/submit_plan.py",
+        "sha256": "2fa89d48c0b497e515f129192a4c6c84b96f05c3d519b34d13db1ae8e90bc358"
+      },
+      {
+        "file": "LearningCircuit__local-deep-research/LICENSE",
+        "sha256": "420d8269376ee925a74aa935fc9b6004fa7f0daf8b76a243853d55b75314739b"
+      },
+      {
+        "file": "LearningCircuit__local-deep-research/src/local_deep_research/advanced_search_system/questions/atomic_fact_question.py",
+        "sha256": "6de0263b2b43521c680ff68094cf580188a1181312fd4bd9537aa9607c47405a"
+      },
+      {
+        "file": "LearningCircuit__local-deep-research/src/local_deep_research/advanced_search_system/strategies/source_based_strategy.py",
+        "sha256": "54669141e6fd579a411b7a2e311116517e1f1cfbc2a1cba9c3ab92bec211b5f4"
+      },
+      {
+        "file": "LearningCircuit__local-deep-research/src/local_deep_research/utilities/research_content_cache.py",
+        "sha256": "9718e7fdde1849f262b61617ba6793b8a6e066f82a257987b8bef1e762c1da85"
+      },
+      {
+        "file": "anysearch-ai__anysearch-skill/LICENSE",
+        "sha256": "07a854e52ab475b19ac2bed1bb1e014da7be2e9613aa27a86808f07dba531d94"
+      },
+      {
+        "file": "anysearch-ai__anysearch-skill/NOTICE",
+        "sha256": "5eab122dbb6c1198640222c32c15e57cee925c884619edfb133b3f210b24c9b2"
+      },
+      {
+        "file": "anysearch-ai__anysearch-skill/README.md",
+        "sha256": "a090f413a5c48dfbb03364862439e08aa8506d069ccf57f2b45e98faef4a2602"
+      },
+      {
+        "file": "anysearch-ai__anysearch-skill/SKILL.md",
+        "sha256": "54702f6066dc76cb2b3c04ba556404e6113b1cdcf0f63120ef3306343f9ab25e"
+      },
+      {
+        "file": "anysearch-ai__anysearch-skill/scripts/anysearch_cli.py",
+        "sha256": "a693759211c090203146ab16c1b3fadec44f66de71b523b7601b6b6c236e326f"
+      },
+      {
+        "file": "anysearch-ai__anysearch-skill/scripts/generate.py",
+        "sha256": "8313494e60b6c3ff55d93cf0d2cbe49da5d63df02c158657d4df95b9eee628ac"
+      },
+      {
+        "file": "anysearch-ai__anysearch-skill/scripts/shared/doc_spec.md",
+        "sha256": "3fe372d6d5efd02324c073500d904b2209943ba5be9ee7e077cb1efeb9532f85"
+      },
+      {
+        "file": "blader__humanizer/LICENSE",
+        "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96"
+      },
+      {
+        "file": "blader__humanizer/SKILL.md",
+        "sha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/LICENSE",
+        "sha256": "9fa6e75b48238c5c401630db3f0c671d9b090cf03a786b8dbac5d9c08031c4b6"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/README.md",
+        "sha256": "f9355d4084cc83eb817d770283cea2d2aa29168c750766cd4fe7c6612eeb7eb4"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/README.zh-CN.md",
+        "sha256": "7d60c254a61aa529e7b86cb278b453b0fd1b379105e9d64bb1f41df047d02f6b"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/SKILL.md",
+        "sha256": "7907b19f421c337ec926788db192fa39e5050b3c0b63b83a208bc28e7370ff2a"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/asr.py",
+        "sha256": "b2a649cbdc499db6ceceb9b3313b1ef55a17634fcf9031133bf299ba48c3c3f0"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/bili_media.py",
+        "sha256": "ad07ba1986d1f2d0124d4dff3093974cc5bd7957cfd2eeff154887b29558fdb2"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/bili_subtitle.py",
+        "sha256": "4328ede5312b09fc1fd403bd77b71d1b64f3725ee04643899bf736ff2e9b6bd1"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/bili_summarize.py",
+        "sha256": "3878baa6f38f435ef8b951ce5aed1b138e76f8830ec4693fe1bff232a4877d0a"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/digest_daily.py",
+        "sha256": "89f24ada8df979ff772131c78238ffe95471c1c673ffbe1fba1b66ffab2b1c3a"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/llm_codec.py",
+        "sha256": "bf2461fb6d65c92af0a9a8c0a2de135ab679daddd3378e14d8b991fb060eec3d"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/local_video_merge.py",
+        "sha256": "e87e33ccec5bcc50bc0c761466b215d7db00a70dd3930a00a95b36624c1bcfae"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/local_video_pipeline.py",
+        "sha256": "5cb273508356c4a36474d276ee4af5b154e3f5af19e1524757f241a535788d30"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/mimo_asr.py",
+        "sha256": "0619322ddec190295d2cba113a042a2969efbc2ecb6dc1c440f7b5fa40eb83bd"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/mimo_vision.py",
+        "sha256": "4a123feee03c34b8e48e250b0b675f5defec921f745ef264ee8dd1ac9f428b77"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/note_header.py",
+        "sha256": "fd084e5e38324d19ec0dd4d963b9367bd023af31ced1f41a4e00d38f17376e30"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/video_frames.py",
+        "sha256": "da82e008eaf493f8f34441f1b74d5bc8911d51aed99cf914ec015ee632717c0f"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/video_vision.py",
+        "sha256": "636aff3e0f7c0a591dbb3fb52919656ec5b4a78f259ee95202f8e7fb17633f7d"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/vision.py",
+        "sha256": "edc4d895668c74753851d8710f002487487fbc62009c1e386849dc55ba57dbcb"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/visual_palette.py",
+        "sha256": "ae85312912b40c3d426d88bf7a80fd8fdf3bef72fe9d6bcac8150ffdd5c6e45f"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/wx_article.py",
+        "sha256": "a5aeca1bb59f5888b4e3ffdff2b1729819ed69197226ac37e71d8d87033e8981"
+      },
+      {
+        "file": "coocA-Alex__video-digest-skill/scripts/xhs_note.py",
+        "sha256": "98dfb8c19c7eba772756f95d68b491cbcace567b4f6fa0472c6fe0b754128d60"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/LICENSE",
+        "sha256": "f98516e99a946cb5cc33f0b40ab9b6d280ba2b443e839235c50ed252c973b2ba"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/README.md",
+        "sha256": "852cff111edca0b4d3550d001eaeb0f2deb7d69b92a78079d4d5a6dd7a2159db"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/README_en.md",
+        "sha256": "d3c8cb2daa9977891c515314fb3bb52e33112d10df2a2f6b4b1e50c2bdbb45f6"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/SKILL.md",
+        "sha256": "4ea48e55028f251e78cff2d4312d55137803651410d562aa304277b0ea8bd4de"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/scripts/download_video_candidates.py",
+        "sha256": "1f6e811c83428911953076f4678407e3bf0405692bbf264f41ee94588f5dd277"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/scripts/download_youtube_subtitles.py",
+        "sha256": "78e2767948a659a2f852ca145a387a6f9ab67022c318b750f5bffb7c1ce12004"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/scripts/install_faster_whisper.py",
+        "sha256": "2356de74cf145bc0beb814fe4646b8da4a34a1d0e12942de0d7999186587ce6a"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/scripts/list_ai_douyin_tasks.py",
+        "sha256": "32ddadf8a82a879c3831b4d811e7a6b4820741fef1f6830ede2d79ebcc725fff"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/scripts/transcribe_faster_whisper.py",
+        "sha256": "009081a50c06778fc6a22a5ce5ad3b45538e78e2b6d47f3968c759f34851d879"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/tests/test_download_video_candidates.py",
+        "sha256": "0518c97ed7a7795cef1e1952a96fc4af067fbe52ec5063ec36a988f1f4e297f9"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/tests/test_download_youtube_subtitles.py",
+        "sha256": "219e9511136c5c8203e217be211d92c977cc934e0079ed4c1725611029bc298b"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/tests/test_install_faster_whisper.py",
+        "sha256": "31cbe850fe1c7c2ed3bc4eb95f960c1fcd9d6f52ff85400e178961e18323a9ce"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/tests/test_list_ai_douyin_tasks.py",
+        "sha256": "a7a6766d13a3f370fc863f88f23c115e8e001c19774b49f59dc20dae9898ee97"
+      },
+      {
+        "file": "imlewc__video-to-subtitle-summary-skill/tests/test_transcribe_faster_whisper.py",
+        "sha256": "c4e865c7b866e242aff6d3b5b3c30e8f91c70fd607ac3c0f0a80231edccbc9b7"
+      },
+      {
+        "file": "nengong__download-anything/LICENSE",
+        "sha256": "00902749f3a64889c4bce2d0a0097b4b7168d6514a0667ba931dfb6d8e2b3009"
+      },
+      {
+        "file": "nengong__download-anything/core/sidecar.py",
+        "sha256": "921eecd4f6d567129fee3a8c0e7e864d359f337e0d6d25000b5c393aaddd89c9"
+      },
+      {
+        "file": "nengong__download-anything/core/url_policy.py",
+        "sha256": "97f36848218e35ab473150b4d37c5553277ec77cd54e16e3af71c1ac402ecc49"
+      },
+      {
+        "file": "nengong__download-anything/drivers/books/arxiv.py",
+        "sha256": "546cd3339a5c423dc4a0a9c74f17eb26a2e1f6f03da98518a745076354387675"
+      },
+      {
+        "file": "nengong__download-anything/drivers/docs/web_article.py",
+        "sha256": "8a9544f8a86dc878ba516fbf03bc3ac2d819340c8623e6de7814f9f0a8af5dcd"
+      },
+      {
+        "file": "nengong__download-anything/skills/download-anything/SKILL.md",
+        "sha256": "3c6735c99d6a221c30815a7ab892becf1af51cf8efc9812006172a818adbcb14"
+      }
+    ]
+  },
+  "historical_snapshot_checks": {
+    "imlewc": [
+      {
+        "file": "LICENSE",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "README.md",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "README_en.md",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "SKILL.md",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "scripts/download_video_candidates.py",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "scripts/download_youtube_subtitles.py",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "scripts/install_faster_whisper.py",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "scripts/list_ai_douyin_tasks.py",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "scripts/transcribe_faster_whisper.py",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "tests/test_download_video_candidates.py",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "tests/test_download_youtube_subtitles.py",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "tests/test_install_faster_whisper.py",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "tests/test_list_ai_douyin_tasks.py",
+        "historical_hash_matches": true
+      },
+      {
+        "file": "tests/test_transcribe_faster_whisper.py",
+        "historical_hash_matches": true
+      }
+    ],
+    "local_deep_research": [
+      {
+        "id": "R2",
+        "file": "source_based_strategy.py",
+        "historical_hash_matches": true
+      },
+      {
+        "id": "R4",
+        "file": "atomic_fact_question.py",
+        "historical_hash_matches": true
+      },
+      {
+        "id": "R5",
+        "file": "research_content_cache.py",
+        "historical_hash_matches": true
+      }
+    ]
+  },
+  "upstream_sources": [
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "LICENSE",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/LICENSE"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "README.md",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/README.md"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "README.zh-CN.md",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/README.zh-CN.md"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "SKILL.md",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/SKILL.md"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/asr.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/asr.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/bili_media.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/bili_media.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/bili_subtitle.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/bili_subtitle.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/bili_summarize.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/bili_summarize.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/digest_daily.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/digest_daily.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/llm_codec.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/llm_codec.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/local_video_merge.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/local_video_merge.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/local_video_pipeline.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/local_video_pipeline.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/mimo_asr.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/mimo_asr.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/mimo_vision.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/mimo_vision.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/note_header.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/note_header.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/video_frames.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/video_frames.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/video_vision.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/video_vision.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/vision.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/vision.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/visual_palette.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/visual_palette.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/wx_article.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/wx_article.py"
+    },
+    {
+      "repo": "coocA-Alex/video-digest-skill",
+      "ref": "798c92f017008280959d7d9faeee00ded37407a4",
+      "path": "scripts/xhs_note.py",
+      "url": "https://github.com/coocA-Alex/video-digest-skill/blob/798c92f017008280959d7d9faeee00ded37407a4/scripts/xhs_note.py"
+    },
+    {
+      "repo": "LDJ-creat/video-analyser-skill",
+      "ref": "e1b3e49ea6518c1acb369c2692a448eefb264a89",
+      "path": "SKILL.md",
+      "url": "https://github.com/LDJ-creat/video-analyser-skill/blob/e1b3e49ea6518c1acb369c2692a448eefb264a89/SKILL.md"
+    },
+    {
+      "repo": "LDJ-creat/video-analyser-skill",
+      "ref": "e1b3e49ea6518c1acb369c2692a448eefb264a89",
+      "path": "README.md",
+      "url": "https://github.com/LDJ-creat/video-analyser-skill/blob/e1b3e49ea6518c1acb369c2692a448eefb264a89/README.md"
+    },
+    {
+      "repo": "LDJ-creat/video-analyser-skill",
+      "ref": "e1b3e49ea6518c1acb369c2692a448eefb264a89",
+      "path": "README.zh.md",
+      "url": "https://github.com/LDJ-creat/video-analyser-skill/blob/e1b3e49ea6518c1acb369c2692a448eefb264a89/README.zh.md"
+    },
+    {
+      "repo": "LDJ-creat/video-analyser-skill",
+      "ref": "e1b3e49ea6518c1acb369c2692a448eefb264a89",
+      "path": "scripts/analyze_video.py",
+      "url": "https://github.com/LDJ-creat/video-analyser-skill/blob/e1b3e49ea6518c1acb369c2692a448eefb264a89/scripts/analyze_video.py"
+    },
+    {
+      "repo": "LDJ-creat/video-analyser-skill",
+      "ref": "e1b3e49ea6518c1acb369c2692a448eefb264a89",
+      "path": "scripts/fetch_chunks.py",
+      "url": "https://github.com/LDJ-creat/video-analyser-skill/blob/e1b3e49ea6518c1acb369c2692a448eefb264a89/scripts/fetch_chunks.py"
+    },
+    {
+      "repo": "LDJ-creat/video-analyser-skill",
+      "ref": "e1b3e49ea6518c1acb369c2692a448eefb264a89",
+      "path": "scripts/fetch_plan.py",
+      "url": "https://github.com/LDJ-creat/video-analyser-skill/blob/e1b3e49ea6518c1acb369c2692a448eefb264a89/scripts/fetch_plan.py"
+    },
+    {
+      "repo": "LDJ-creat/video-analyser-skill",
+      "ref": "e1b3e49ea6518c1acb369c2692a448eefb264a89",
+      "path": "scripts/poll_job.py",
+      "url": "https://github.com/LDJ-creat/video-analyser-skill/blob/e1b3e49ea6518c1acb369c2692a448eefb264a89/scripts/poll_job.py"
+    },
+    {
+      "repo": "LDJ-creat/video-analyser-skill",
+      "ref": "e1b3e49ea6518c1acb369c2692a448eefb264a89",
+      "path": "scripts/submit_chunk_summaries.py",
+      "url": "https://github.com/LDJ-creat/video-analyser-skill/blob/e1b3e49ea6518c1acb369c2692a448eefb264a89/scripts/submit_chunk_summaries.py"
+    },
+    {
+      "repo": "LDJ-creat/video-analyser-skill",
+      "ref": "e1b3e49ea6518c1acb369c2692a448eefb264a89",
+      "path": "scripts/submit_plan.py",
+      "url": "https://github.com/LDJ-creat/video-analyser-skill/blob/e1b3e49ea6518c1acb369c2692a448eefb264a89/scripts/submit_plan.py"
+    },
+    {
+      "repo": "anysearch-ai/anysearch-skill",
+      "ref": "e70355ba9957cf69923f49ae8ffb224ccc3ae7f0",
+      "path": "LICENSE",
+      "url": "https://github.com/anysearch-ai/anysearch-skill/blob/e70355ba9957cf69923f49ae8ffb224ccc3ae7f0/LICENSE"
+    },
+    {
+      "repo": "anysearch-ai/anysearch-skill",
+      "ref": "e70355ba9957cf69923f49ae8ffb224ccc3ae7f0",
+      "path": "NOTICE",
+      "url": "https://github.com/anysearch-ai/anysearch-skill/blob/e70355ba9957cf69923f49ae8ffb224ccc3ae7f0/NOTICE"
+    },
+    {
+      "repo": "anysearch-ai/anysearch-skill",
+      "ref": "e70355ba9957cf69923f49ae8ffb224ccc3ae7f0",
+      "path": "SKILL.md",
+      "url": "https://github.com/anysearch-ai/anysearch-skill/blob/e70355ba9957cf69923f49ae8ffb224ccc3ae7f0/SKILL.md"
+    },
+    {
+      "repo": "anysearch-ai/anysearch-skill",
+      "ref": "e70355ba9957cf69923f49ae8ffb224ccc3ae7f0",
+      "path": "README.md",
+      "url": "https://github.com/anysearch-ai/anysearch-skill/blob/e70355ba9957cf69923f49ae8ffb224ccc3ae7f0/README.md"
+    },
+    {
+      "repo": "anysearch-ai/anysearch-skill",
+      "ref": "e70355ba9957cf69923f49ae8ffb224ccc3ae7f0",
+      "path": "scripts/anysearch_cli.py",
+      "url": "https://github.com/anysearch-ai/anysearch-skill/blob/e70355ba9957cf69923f49ae8ffb224ccc3ae7f0/scripts/anysearch_cli.py"
+    },
+    {
+      "repo": "anysearch-ai/anysearch-skill",
+      "ref": "e70355ba9957cf69923f49ae8ffb224ccc3ae7f0",
+      "path": "scripts/generate.py",
+      "url": "https://github.com/anysearch-ai/anysearch-skill/blob/e70355ba9957cf69923f49ae8ffb224ccc3ae7f0/scripts/generate.py"
+    },
+    {
+      "repo": "anysearch-ai/anysearch-skill",
+      "ref": "e70355ba9957cf69923f49ae8ffb224ccc3ae7f0",
+      "path": "scripts/shared/doc_spec.md",
+      "url": "https://github.com/anysearch-ai/anysearch-skill/blob/e70355ba9957cf69923f49ae8ffb224ccc3ae7f0/scripts/shared/doc_spec.md"
+    },
+    {
+      "repo": "nengong/download-anything",
+      "ref": "f3db92847c14245ee9afae881ecb307e27d8d829",
+      "path": "LICENSE",
+      "url": "https://github.com/nengong/download-anything/blob/f3db92847c14245ee9afae881ecb307e27d8d829/LICENSE"
+    },
+    {
+      "repo": "nengong/download-anything",
+      "ref": "f3db92847c14245ee9afae881ecb307e27d8d829",
+      "path": "drivers/docs/web_article.py",
+      "url": "https://github.com/nengong/download-anything/blob/f3db92847c14245ee9afae881ecb307e27d8d829/drivers/docs/web_article.py"
+    },
+    {
+      "repo": "nengong/download-anything",
+      "ref": "f3db92847c14245ee9afae881ecb307e27d8d829",
+      "path": "drivers/books/arxiv.py",
+      "url": "https://github.com/nengong/download-anything/blob/f3db92847c14245ee9afae881ecb307e27d8d829/drivers/books/arxiv.py"
+    },
+    {
+      "repo": "nengong/download-anything",
+      "ref": "f3db92847c14245ee9afae881ecb307e27d8d829",
+      "path": "core/url_policy.py",
+      "url": "https://github.com/nengong/download-anything/blob/f3db92847c14245ee9afae881ecb307e27d8d829/core/url_policy.py"
+    },
+    {
+      "repo": "nengong/download-anything",
+      "ref": "f3db92847c14245ee9afae881ecb307e27d8d829",
+      "path": "core/sidecar.py",
+      "url": "https://github.com/nengong/download-anything/blob/f3db92847c14245ee9afae881ecb307e27d8d829/core/sidecar.py"
+    },
+    {
+      "repo": "nengong/download-anything",
+      "ref": "f3db92847c14245ee9afae881ecb307e27d8d829",
+      "path": "skills/download-anything/SKILL.md",
+      "url": "https://github.com/nengong/download-anything/blob/f3db92847c14245ee9afae881ecb307e27d8d829/skills/download-anything/SKILL.md"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "LICENSE",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/LICENSE"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "SKILL.md",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/SKILL.md"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "README.md",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/README.md"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "scripts/download_youtube_subtitles.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/scripts/download_youtube_subtitles.py"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "scripts/download_video_candidates.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/scripts/download_video_candidates.py"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "scripts/transcribe_faster_whisper.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/scripts/transcribe_faster_whisper.py"
+    },
+    {
+      "repo": "blader/humanizer",
+      "ref": "8c307f367c91bd974002f10f2be2965d642c13df",
+      "path": "LICENSE",
+      "url": "https://github.com/blader/humanizer/blob/8c307f367c91bd974002f10f2be2965d642c13df/LICENSE"
+    },
+    {
+      "repo": "blader/humanizer",
+      "ref": "8c307f367c91bd974002f10f2be2965d642c13df",
+      "path": "SKILL.md",
+      "url": "https://github.com/blader/humanizer/blob/8c307f367c91bd974002f10f2be2965d642c13df/SKILL.md"
+    },
+    {
+      "repo": "LearningCircuit/local-deep-research",
+      "ref": "5294f7d0a0e4e60f0496587ca8739d540eab5a14",
+      "path": "LICENSE",
+      "url": "https://github.com/LearningCircuit/local-deep-research/blob/5294f7d0a0e4e60f0496587ca8739d540eab5a14/LICENSE"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "scripts/install_faster_whisper.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/scripts/install_faster_whisper.py"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "scripts/list_ai_douyin_tasks.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/scripts/list_ai_douyin_tasks.py"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "tests/test_download_video_candidates.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/tests/test_download_video_candidates.py"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "tests/test_download_youtube_subtitles.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/tests/test_download_youtube_subtitles.py"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "tests/test_install_faster_whisper.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/tests/test_install_faster_whisper.py"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "tests/test_list_ai_douyin_tasks.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/tests/test_list_ai_douyin_tasks.py"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "tests/test_transcribe_faster_whisper.py",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/tests/test_transcribe_faster_whisper.py"
+    },
+    {
+      "repo": "imlewc/video-to-subtitle-summary-skill",
+      "ref": "50598e25e9962b3f7fef3c7d73c066c00d3ecb87",
+      "path": "README_en.md",
+      "url": "https://github.com/imlewc/video-to-subtitle-summary-skill/blob/50598e25e9962b3f7fef3c7d73c066c00d3ecb87/README_en.md"
+    }
+  ],
+  "interpretation": "No threshold hits; not proof of originality or absence of translated/adapted content. No project license selected.",
+  "changes": "Documentation only; production and candidate Python/Skill/references implementations unchanged; previously built distributions predate this review.",
+  "license_closure": {
+    "date": "2026-11-19",
+    "project_license": "MIT",
+    "scope": "original project source/documentation; reference notices retained",
+    "report": "license-closure.md",
+    "original_comparison": "preserved historical evidence, not an originality warranty"
+  }
+}

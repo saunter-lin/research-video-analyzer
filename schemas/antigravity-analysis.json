@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AntigravityResearchAnalysis",
+  "type": "object",
+  "required": [
+    "summary",
+    "topics",
+    "comparison",
+    "limitations",
+    "conclusion",
+    "evidence_ids",
+    "deep",
+    "claims_analysis"
+  ],
+  "properties": {
+    "summary": {
+      "type": "string",
+      "description": "摘要回答研究問題，重要主張必須引用 [E:12碼ID]",
+      "minLength": 1
+    },
+    "topics": {
+      "type": "string",
+      "description": "主題分析內容，必須引用 [E:12碼ID]",
+      "minLength": 1
+    },
+    "comparison": {
+      "type": "string",
+      "description": "產品對照分析，必須引用 [E:12碼ID]",
+      "minLength": 1
+    },
+    "limitations": {
+      "type": "string",
+      "description": "研究局限性與已知缺口",
+      "minLength": 1
+    },
+    "conclusion": {
+      "type": "string",
+      "enum": [
+        "建議購買",
+        "有條件購買",
+        "保留現有設備",
+        "不建議購買",
+        "證據不足",
+        "一般影片分析",
+        "一般研究分析"
+      ],
+      "minLength": 1
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{12}$",
+        "minLength": 1
+      },
+      "minItems": 0,
+      "description": "所有正文中引用的 Evidence ID 清單，必須與正文出現的一致",
+      "uniqueItems": true
+    },
+    "deep": {
+      "type": "object",
+      "required": [
+        "background",
+        "cross_validation",
+        "scenarios",
+        "recommendation"
+      ],
+      "properties": {
+        "background": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cross_validation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scenarios": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recommendation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "claims_analysis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "source_id",
+          "claim_type",
+          "fact_or_opinion",
+          "assessment"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{12}$",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim_type": {
+            "type": "string",
+            "enum": [
+              "test_presented",
+              "reviewer_opinion",
+              "official_spec",
+              "official_marketing",
+              "unverified",
+              "inference"
+            ],
+            "minLength": 1
+          },
+          "fact_or_opinion": {
+            "type": "string",
+            "enum": [
+              "fact",
+              "opinion",
+              "inference",
+              "unverified"
+            ],
+            "minLength": 1
+          },
+          "assessment": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 0
+    }
+  },
+  "additionalProperties": false
+}

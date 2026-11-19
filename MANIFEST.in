@@ -1,0 +1,22 @@
+include LICENSE THIRD_PARTY_NOTICES.md ACKNOWLEDGEMENTS.md
+recursive-include third_party *.txt
+prune .git
+include README.md README.zh-TW.md THIRD_PARTY.md runtime.example.json video-analyzer cli.py __init__.py .gitignore .env.example
+include requirements*.txt
+recursive-include scripts *.py
+recursive-include references *.md *.json
+recursive-include schemas *.json
+recursive-include skills *.md *.json
+recursive-include docs *.md *.json
+recursive-include examples *.py *.md
+recursive-include tests *.py
+recursive-include tools *.py
+recursive-include .github *.yml
+prune data
+prune .venv
+prune .models
+prune .tools
+prune build
+prune dist
+prune *.egg-info
+global-exclude *.pyc __pycache__ .DS_Store
