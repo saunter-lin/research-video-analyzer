@@ -1,13 +1,13 @@
 # Research / Video Analyzer 1.4.0 開源準備評估
 
-> 2026-11-19 授權收尾更新：原創程式／專案文件已採 MIT，四項 MIT 參考來源完整通知已保留，來源限定為不含套件／模型／二進位／歷史素材的原始碼候選。已具備建立私有 Repository 的授權管理條件；下文的 LICENSE 待定／NO-GO 為前兩輪歷史結論，不代表目前尚未放置 LICENSE。詳見[授權收尾](license-closure.md)。原先不確定的作者歷史與提示詞衍生限制仍如實保留，沒有改成「完全原創」證明。
+> 2026-11-19 授權收尾更新：原創程式／專案文件已採 MIT，四項 MIT 參考來源完整通知已保留，版本為 `1.4.0`，GitHub Repository 已公開；散布範圍為不含套件／模型／二進位／歷史素材的原始碼。下文的 LICENSE 待定／NO-GO 為前兩輪歷史結論，不代表目前尚未放置 LICENSE。詳見[授權收尾](license-closure.md)。原先不確定的作者歷史與提示詞衍生限制仍如實保留，沒有改成「完全原創」證明。
 
 
 查核日期：2026-11-19（Asia/Taipei）。範圍為既有穩定工具的獨立公開候選整理，採 Python CLI 核心 + Agent Skill，不啟動新研究工具專案，也不改正式安裝。依專案規則，本次屬既有專案維護，不重做 3～5 個替代方案的完整新專案預研。
 
 ## 前兩輪結論（歷史紀錄，現況見上方更新）
 
-**工程準備已完成，可供審查；目前不具備正式公開開源發布條件（NO-GO）。**
+**當時結論：授權尚未收尾，判定 NO-GO；其後已完成 MIT 與來源通知整理，Repository 現已公開。**
 
 獨立候選可安裝、可不用 Codex 執行，具備合成離線範例、雙語文件、Skill、CI 定義與回歸驗證。原創程式權利歸屬、最終 LICENSE、精確版本第三方授權／通知與依賴發行策略仍待確認，故未放置 LICENSE，不能宣稱已取得整套環境的自由商用／散布許可。沒有建立 GitHub Repository、Push、Release 或呼叫付費 API。
 
@@ -42,7 +42,7 @@
 
 原環境 lock 有 36 筆、可選文件 intake lock 有 18 筆，重疊保留共 **54 筆**；已逐筆查讀現有套件 metadata，54 筆版本均與 lock 一致，並記錄宣告授權與 notice 檔名。這是本機 metadata 核對，不是完整原始碼、wheel 內容或安全弱點稽核。完整表見 [THIRD_PARTY.md](../THIRD_PARTY.md) 與 [JSON](dependency-inventory.json)。
 
-| 風險 | 判定與處理 | 公開前仍須確認 |
+| 風險 | 判定與處理 | 後續使用／散布仍須確認 |
 |---|---|---|
 | 原創程式權利／貢獻 | 未看到可沿用的專案 LICENSE；第二輪逐來源追溯確認設計借鑑，未證實直接收錄；特定提示詞衍生仍證據不足，不能認定完全原創 | 權利人、貢獻與任何未標註引用，決定 MIT／Apache-2.0 後再加入 LICENSE |
 | GPL／MPL 相依 | mutagen GPL-2.0-or-later；certifi MPL-2.0；tld 含 MPL/GPL/LGPL 選項；不隨原始碼候選散布套件 | 最終 dependency route、選定授權、必要通知及未來 bundled distribution 義務 |
@@ -54,7 +54,7 @@
 
 ## 四、最小分離修改與安裝
 
-1. 新增 `pyproject.toml`、console adapter、wheel／sdist file manifest；package 版本 `1.4.0.dev1`，內部核心仍標示 1.4.0，以免混淆正式版。
+1. 新增 `pyproject.toml`、console adapter、wheel／sdist file manifest；公開套件與內部核心版本統一為 `1.4.0`。
 2. 核心執行期依賴為標準庫；影片、音訊、文件與 benchmark 改成選配 extra。原 lock 保留為歷史清單，避免誤稱為跨平台可解析的公共 lock。
 3. 預設 Store 與 cache 為 `~/.local/share/research-video-analyzer`／`~/.cache/research-video-analyzer`，可用 CLI 或環境變數指定；不寫 site-packages，不重用正式 Store。
 4. 私有 `RESEARCH_RUNTIME` 設定模型；移除個人 shebang 與 Codex 內建 Node 路徑，Node 只讀 PATH；預設 analysis provenance 改成 Human or Agent，不假稱來自 Codex；doctor 不安裝、不下載、不呼叫模型。

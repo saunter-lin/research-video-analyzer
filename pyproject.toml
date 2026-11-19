@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "research-video-analyzer"
-version = "1.4.0.dev2"
+version = "1.4.0"
 description = "Evidence-traceable local research CLI with an optional Agent Skill"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "third_party/licenses/*.txt"]
 dependencies = []
-classifiers = ["Development Status :: 3 - Alpha", "Operating System :: POSIX", "Programming Language :: Python :: 3"]
+classifiers = ["Operating System :: POSIX", "Programming Language :: Python :: 3"]
 
 [project.optional-dependencies]
 video = ["yt-dlp>=2026.10.26", "yt-dlp-ejs>=0.8.0", "imageio-ffmpeg>=0.6,<0.7"]

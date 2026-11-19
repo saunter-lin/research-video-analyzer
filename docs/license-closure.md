@@ -1,8 +1,8 @@
-# License closure — source-only private repository
+# License closure — public source repository
 
-Decision date: 2026-11-19 (Asia/Taipei). Candidate: `1.4.0.dev2`; retained research core: 1.4.0.
+Decision date: 2026-11-19 (Asia/Taipei). Project version and retained research core: `1.4.0`. The source repository is now public.
 
-The user's instruction to close the licensing work and create a private GitHub repository authorizes completing the previously recommended MIT choice for this source candidate. The root LICENSE now identifies **saunter-lin and contributors** for original project work; this is the verified maintainer account, not a claim to own upstream material. No separate signed ownership warranty or complete legal originality determination has been obtained.
+The MIT choice was completed during license closure. The maintainer subsequently authorized making the GitHub source repository public. The root LICENSE now identifies **saunter-lin and contributors** for original project work; this is the verified maintainer account, not a claim to own upstream material. No separate signed ownership warranty or complete legal originality determination has been obtained.
 
 ## Closed items
 
@@ -17,7 +17,7 @@ The user's instruction to close the licensing work and create a private GitHub r
 | Wheel/source archive attribution | Build manifest and package license-file metadata include the project license and all four full reference notices; built archives must be inspected before delivery |
 | Private paths / prior history | Git root is only `repository/`; local verification records, original research sessions, binaries, models, build artifacts and old histories are excluded |
 
-This closes the known license-administration blockers for storing the inspected source candidate in a **private** repository. The earlier assessment's LICENSE-pending NO-GO records the state before this decision. It must not be read as the current project license. The private repository remains private; no public release, visibility change or packaged third-party binary distribution is authorized by this action.
+The inspected source is available in the **public** [GitHub repository](https://github.com/saunter-lin/research-video-analyzer) under MIT for original project work. Earlier LICENSE-pending / NO-GO statements describe historical review stages and do not represent the current repository status. Repository visibility does not itself create a GitHub Release or expand the scope to bundled third-party binaries.
 
 ## Remaining bounds
 
@@ -25,7 +25,7 @@ The prior review found no exact matches at its specified thresholds, but cannot 
 
 Fresh optional-extra installation, live platform/provider behavior, native Windows support, all-Agent workflows and complete dependency vulnerability audits remain engineering/operational limitations, not grounds to relabel third-party licenses as MIT. The [provenance audit](external-skill-provenance.zh-TW.md), [dependency inventory](../THIRD_PARTY.md) and [testing notes](testing.md) remain part of the record.
 
-CI definitions are retained for explicit `workflow_dispatch` only on initial private setup, so repository creation does not automatically launch the optional/native dependency matrix. No paid API call is part of preparation or the offline tests.
+CI definitions use explicit `workflow_dispatch`; making the repository public does not automatically launch the optional/native dependency matrix. No paid API call is part of preparation or the offline tests.
 
 ## Reference terms
 

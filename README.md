@@ -1,6 +1,6 @@
 # Research / Video Analyzer
 
-A local Python CLI for evidence-traceable research across public videos, web pages and comments, with an optional Agent Skill. Based on the stable Research 1.4.0 implementation. This is a private development candidate (`1.4.0.dev2`), licensed under MIT for original project source and documentation. Third-party notices and distribution boundaries are documented below.
+A local Python CLI for evidence-traceable research across public videos, web pages and comments, with an optional Agent Skill. Based on the stable Research 1.4.0 implementation. Version `1.4.0` is publicly available on [GitHub](https://github.com/saunter-lin/research-video-analyzer), with original project source and documentation licensed under MIT. Third-party notices and distribution boundaries are documented below.
 
 [繁體中文](README.zh-TW.md) · [Installation](docs/install.md) · [Agent setup](docs/agents.md) · [Testing](docs/testing.md) · [Readiness assessment](docs/open-source-assessment.zh-TW.md)
 
@@ -53,10 +53,10 @@ Run `video-analyzer skill-path` to locate the self-contained Skill folder. Copy 
 
 Defaults are `~/.local/share/research-video-analyzer` and `~/.cache/research-video-analyzer`, separate from the original tool's state. Set `RESEARCH_DATA_DIR`, `RESEARCH_CACHE_DIR` or explicit CLI options; optional models use a private `RESEARCH_RUNTIME` JSON file. `.env.example` documents variables; `.env` files are not loaded.
 
-Do not publish research sessions, credentials, cookies, signed media URLs, copyrighted captures, model weights, local environments or archived fixtures. `.gitignore` is defense in depth, not a sanitizer. Review the release file manifest and [security guidance](SECURITY.md) before publishing.
+Do not publish research sessions, credentials, cookies, signed media URLs, copyrighted captures, model weights, local environments or archived fixtures. `.gitignore` is defense in depth, not a sanitizer. Keep exports and distribution contents consistent with the file manifest and [security guidance](SECURITY.md).
 
 ## License
 
 Original project source and documentation are licensed under [MIT](LICENSE). Complete notices for four documented MIT references are retained in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md); see [ACKNOWLEDGEMENTS](ACKNOWLEDGEMENTS.md) and the [license closure](docs/license-closure.md).
 
-Dependencies, executables, model weights and acquired content retain their own terms; they are not bundled or relicensed by this source-only distribution. See [THIRD_PARTY.md](THIRD_PARTY.md). The repository is private, and this preparation does not publish a release. CI is available by explicit manual dispatch.
+Dependencies, executables, model weights and acquired content retain their own terms; they are not bundled or relicensed by this source-only distribution. See [THIRD_PARTY.md](THIRD_PARTY.md). The source repository is public. GitHub Releases are managed separately from repository visibility. CI is available by explicit manual dispatch.

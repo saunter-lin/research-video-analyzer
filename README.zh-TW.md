@@ -1,6 +1,6 @@
 # Research / Video Analyzer
 
-以穩定的 Research 1.4.0 為基礎，整理為「Python CLI 核心 + Agent Skill」。目前為私有開發候選 `1.4.0.dev2`；原創程式與專案文件已採用 MIT，第三方通知與散布邊界分開保存。
+以穩定的 Research 1.4.0 為基礎，整理為「Python CLI 核心 + Agent Skill」。目前版本為 `1.4.0`，原始碼已於 [GitHub](https://github.com/saunter-lin/research-video-analyzer) 公開；原創程式與專案文件已採用 MIT，第三方通知與散布邊界分開保存。
 
 CLI 可獨立操作研究紀錄、來源快照、證據 ID、行號與時間定位、SQLite 快取、預算閘門、研究缺口，以及 Quick／Deep 報告。原有字幕、評論、網頁、影音、可選本機 VAD／ASR 與 Antigravity 驗證／接手機制均保留。內容判讀、來源獨立性與可比性仍由人或 Agent 核對。
 
@@ -33,7 +33,7 @@ video-analyzer --data ./data --cache ./cache research-status SESSION_ID
 
 預設資料 `~/.local/share/research-video-analyzer`，快取 `~/.cache/research-video-analyzer`，與原正式版分開。可設定 `RESEARCH_DATA_DIR`、`RESEARCH_CACHE_DIR`；模型設定用 `RESEARCH_RUNTIME`。不會自動讀取 `.env`。
 
-正式研究資料、快取、歷史、帳密、Cookie、模型、第三方影音與歷史非商用素材均未納入。公開前仍須檢查最終檔案清單。
+正式研究資料、快取、歷史、帳密、Cookie、模型、第三方影音與歷史非商用素材均未納入。後續提交與散布內容依檔案清單及[安全規則](SECURITY.md)持續檢查。
 
 ## 文件與公開結論
 
@@ -41,4 +41,4 @@ video-analyzer --data ./data --cache ./cache research-status SESSION_ID
 - [建議 Repository 結構與最小修改](docs/architecture.md)
 - [安裝](docs/install.md)、[測試](docs/testing.md)、[安全邊界](SECURITY.md)
 
-原創程式與專案文件採 [MIT](LICENSE)，四個已記錄 MIT 參考來源的完整通知保留於 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。[授權收尾紀錄](docs/license-closure.md)說明適用範圍；套件、二進位、模型與研究素材不因此被改授權。此候選用於 GitHub 私有 Repository，未公開發布 Release；CI 保留手動啟動。英文文件見 [README](README.md)。
+原創程式與專案文件採 [MIT](LICENSE)，四個已記錄 MIT 參考來源的完整通知保留於 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。[授權收尾紀錄](docs/license-closure.md)說明適用範圍；套件、二進位、模型與研究素材不因此被改授權。GitHub Repository 已公開，版本為 `1.4.0`；Repository 公開與 GitHub Release 分開管理，CI 保留手動啟動。英文文件見 [README](README.md)。

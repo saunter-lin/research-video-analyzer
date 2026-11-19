@@ -8,7 +8,7 @@ For an offline install, obtain reviewed wheels for setuptools (>=77) and wheel u
 
 ```sh
 python -m pip wheel --no-deps --no-build-isolation --no-index . --wheel-dir /tmp/research-wheels
-python -m pip install --no-deps --no-index /tmp/research-wheels/research_video_analyzer-1.4.0.dev2-py3-none-any.whl
+python -m pip install --no-deps --no-index /tmp/research-wheels/research_video_analyzer-1.4.0-py3-none-any.whl
 ```
 
 No model or network call occurs from core imports, help, doctor, session creation or the synthetic example. `doctor` lists optional capabilities as unavailable without failing the core check. It does not validate provider quota or prove media playback.
